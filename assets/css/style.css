@@ -1,0 +1,131 @@
+:root {
+    --dark: #13293d;
+    --light: #48D1CC;
+    --distance: 75px;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+body {
+    background-color: #F0F8FF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: var(--dark);
+    
+}
+
+header h1 { 
+    padding: 5px 5px 5px var(--distance);
+    background-color: var(--light);
+    color: var(--dark);
+
+}
+
+header nav {
+    margin-right: var(--distance);
+    align-self: center;
+}
+header a {
+    display: inline;
+    padding: 5px;
+    color: var(--light);
+
+    
+}
+
+section {
+    background-color: #6495ed;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+h3 {
+    margin-right: var(--distance);
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: var(--light);
+    text-align: end;
+}
+
+/*-----below is the main----------*/
+
+.row {
+    display: flex;
+    margin: 20px 0px;
+    min-height: 100px;
+}
+
+.col-left {
+    width: 10%;
+    min-width: 100px;
+    margin-left: var(--distance);
+    border-right: solid 3px var(--dark);
+    color: var(--dark);
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    
+
+}
+
+.col-left h1 {
+    margin-right: 10px;
+    text-align: end;
+    
+    
+}
+
+.col-right {
+    width: 80%;
+    margin-left: 20px;
+    margin-right: var(--distance);
+    float: right;
+   /* background-color: plum;*/
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#describe-me {
+flex-direction: column;
+}
+
+
+.card {
+    width: 50%;
+    height: 100px;
+    background-color: blueviolet;
+    
+}
+
+#bigone {
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.col-right nav {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+
+}
+
+main a {
+    color: var(--dark);
+    padding: 10px;
+}
+
+/*-------------------------------*/
