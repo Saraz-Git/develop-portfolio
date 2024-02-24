@@ -112,17 +112,37 @@ opacity: 0.7;
     justify-content: flex-start;
     }
 
+    .col-right h5 {
+        font-size: 8px;
+        margin-top: 3px;
+    }
+
 .col-right img {
     max-width: 100%;
     border: solid 2px var(--light);
 }
 
 
-
-.card {
+.card:nth-child(n+2) {
     width: 49.8%;        
 }
 
+.card {
+    position: relative;
+    
+}
+
+.card div {
+    background-color: var(--light);
+    display: inline-block;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    
+    
+
+   
+}
 
 
 
