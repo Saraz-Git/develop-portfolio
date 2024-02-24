@@ -1,6 +1,7 @@
 :root {
     --dark: #13293d;
     --light: #48D1CC;
+   /* --light: #92cccd;*/
     --distance: 75px;
 }
 
@@ -12,7 +13,7 @@
 }
 
 body {
-    background-color: #F0F8FF;
+    background-color: #ededf7;
 }
 
 header {
@@ -36,28 +37,35 @@ header nav {
 }
 header a {
     display: inline;
+    text-decoration: none;
     padding: 5px;
+    margin-left: 5px;
     color: var(--light);
-
+    border-bottom: solid 3px var(--light);
     
 }
 
-section {
-    background-color: #6495ed;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
-}
-
-h3 {
-    margin-right: var(--distance);
-    padding: 5px;
-    margin-bottom: 10px;
-    background-color: var(--light);
+.intro {
+    position: relative;
+    color: var(--dark);
     text-align: end;
 }
+
+#myphoto {
+opacity: 0.7;
+}
+
+.subtitle {
+    font-size: 24px;
+    padding: 5px 5px 5px 35px;
+    background-color: var(--light);
+    position: absolute;
+    right: var(--distance);
+    bottom: 40px;
+}
+
+
+
 
 /*-----below is the main----------*/
 
@@ -65,6 +73,7 @@ h3 {
     display: flex;
     margin: 20px 0px;
     min-height: 100px;
+    color: #4c6079;
 }
 
 .col-left {
@@ -72,11 +81,10 @@ h3 {
     min-width: 100px;
     margin-left: var(--distance);
     border-right: solid 3px var(--dark);
-    color: var(--dark);
+    
     float: left;
     display: flex;
-    justify-content: flex-end;
-    
+    justify-content: flex-end;    
 
 }
 
@@ -95,25 +103,30 @@ h3 {
    /* background-color: plum;*/
    display: flex;
    flex-wrap: wrap;
+   justify-content: space-between;
 }
 
-#describe-me {
-flex-direction: column;
+#description {
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+
+.col-right img {
+    max-width: 100%;
+    border: solid 2px var(--light);
 }
+
 
 
 .card {
-    width: 50%;
-    height: 100px;
-    background-color: blueviolet;
-    
+    width: 49.8%;        
 }
 
-#bigone {
-    width: 100%;
-    height: 100px;
-    background-color: blueviolet;
-}
+
+
+
+
+
 
 .col-right nav {
     width: 100%;
@@ -129,3 +142,9 @@ main a {
 }
 
 /*-------------------------------*/
+
+header a:hover {
+    background-color: var(--light);
+    color: var(--dark);
+    transition: all 1s;
+}
