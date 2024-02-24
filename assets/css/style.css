@@ -35,6 +35,7 @@ header nav {
     margin-right: var(--distance);
     align-self: center;
 }
+
 header a {
     display: inline;
     text-decoration: none;
@@ -136,9 +137,11 @@ opacity: 0.7;
 
 }
 
-main a {
+main nav a {
     color: var(--dark);
-    padding: 10px;
+    padding: 5px;
+    text-decoration: none;
+    border-bottom: solid 3px #4c6079;
 }
 
 /*-------------------------------*/
@@ -147,4 +150,21 @@ header a:hover {
     background-color: var(--light);
     color: var(--dark);
     transition: all 1s;
+}
+
+.col-right img:hover {
+    opacity: 0.9;
+}
+
+.subtitle::after {
+    content: '👋' ;
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 170px;
+    display: none;
+}
+
+.subtitle:hover::after {
+    display: block;
 }
