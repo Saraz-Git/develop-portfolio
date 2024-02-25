@@ -5,8 +5,8 @@ The following animation shows the demo web application's appearance and function
 
 ![portfolio demo](./assets/images/02-advanced-css-homework-demo.gif)
 
-## Task
-* built a portfolio page with HTML and CSS according to the demo.
+## What I Have Done 
+* built a HTML page with required functionality of portfolio.
 * applied Flexbox, media queries, pseudo class and CSS variables in styling.
 * UI scrolls to relevant section when navigation links are clicked.
 * Made first project image size larger than others, and linked to deployed application.
