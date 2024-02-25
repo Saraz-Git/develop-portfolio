@@ -46,7 +46,7 @@ header a {
 
 }
 
-/*section about me */
+/*section of my photo or avatar */
 .intro {
     position: relative;
     color: var(--dark);
@@ -66,11 +66,11 @@ header a {
     bottom: 40px;
 }
 
-/*section about my work*/
+/*section about me, my work and contact*/
 
 .row {
     display: flex;
-    margin: 20px 0px;
+    margin: 50px 0px;
     min-height: 100px;
     color: #4c6079;
 }
@@ -111,9 +111,11 @@ header a {
     margin-top: 3px;
 }
 
+
 .col-right img {
     max-width: 100%;
     border: solid 2px var(--light);
+    
 }
 
 
@@ -133,7 +135,6 @@ header a {
     bottom: 20px;
 }
 
-/*section about contact me*/
 .col-right nav {
     width: 100%;
     display: flex;
