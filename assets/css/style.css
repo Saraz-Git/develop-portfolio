@@ -1,34 +1,34 @@
 :root {
     --dark: #13293d;
     --light: #48D1CC;
-   /* --light: #92cccd;*/
+    /* --light: #92cccd;*/
     --distance: 75px;
 }
 
 * {
-   box-sizing: border-box;
-   margin: 0;
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 body {
     background-color: #ededf7;
 }
 
+/*header heading and navigation bar styles*/
 header {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
     background-color: var(--dark);
-    
+
 }
 
-header h1 { 
+header h1 {
     padding: 5px 5px 5px var(--distance);
     background-color: var(--light);
     color: var(--dark);
-
 }
 
 header nav {
@@ -43,20 +43,21 @@ header a {
     margin-left: 5px;
     color: var(--light);
     border-bottom: solid 3px var(--light);
-    
+
 }
 
+/*section about me */
 .intro {
     position: relative;
     color: var(--dark);
     text-align: end;
 }
 
-#myphoto {
-opacity: 0.7;
+.intro img {
+    opacity: 0.7;
 }
 
-.subtitle {
+.intro .subtitle {
     font-size: 24px;
     padding: 5px 5px 5px 35px;
     background-color: var(--light);
@@ -65,10 +66,7 @@ opacity: 0.7;
     bottom: 40px;
 }
 
-
-
-
-/*-----below is the main----------*/
+/*section about my work*/
 
 .row {
     display: flex;
@@ -82,18 +80,15 @@ opacity: 0.7;
     min-width: 100px;
     margin-left: var(--distance);
     border-right: solid 3px var(--dark);
-    
+
     float: left;
     display: flex;
-    justify-content: flex-end;    
-
+    justify-content: flex-end;
 }
 
 .col-left h1 {
     margin-right: 10px;
     text-align: end;
-    
-    
 }
 
 .col-right {
@@ -101,21 +96,20 @@ opacity: 0.7;
     margin-left: 20px;
     margin-right: var(--distance);
     float: right;
-   /* background-color: plum;*/
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #description {
     flex-direction: column;
     justify-content: flex-start;
-    }
+}
 
-    .col-right h5 {
-        font-size: 8px;
-        margin-top: 3px;
-    }
+.col-right h5 {
+    font-size: 8px;
+    margin-top: 3px;
+}
 
 .col-right img {
     max-width: 100%;
@@ -124,12 +118,11 @@ opacity: 0.7;
 
 
 .card:nth-child(n+2) {
-    width: 49.8%;        
+    width: 49.8%;
 }
 
 .card {
     position: relative;
-    
 }
 
 .card div {
@@ -138,33 +131,25 @@ opacity: 0.7;
     padding: 10px;
     position: absolute;
     bottom: 20px;
-    
-    
-
-   
 }
 
-
-
-
-
-
+/*section about contact me*/
 .col-right nav {
     width: 100%;
     display: flex;
     align-self: center;
     justify-content: space-between;
-
 }
 
-main nav a {
+.col-right nav a {
     color: var(--dark);
     padding: 5px;
     text-decoration: none;
     border-bottom: solid 3px #4c6079;
+
 }
 
-/*-------------------------------*/
+/*Pseudo elements*/
 
 header a:hover {
     background-color: var(--light);
@@ -177,7 +162,7 @@ header a:hover {
 }
 
 .subtitle::after {
-    content: '👋' ;
+    content: '👋';
     display: block;
     position: absolute;
     bottom: 5px;
@@ -187,4 +172,22 @@ header a:hover {
 
 .subtitle:hover::after {
     display: block;
+}
+
+/*Media Query responsive design*/
+
+@media screen and (max-width: 768px) {
+    .col-right {
+        flex-direction: column;
+    }
+
+    .card:nth-child(n+2) {
+        width: 100%;
+    }
+
+    .col-right nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 }
